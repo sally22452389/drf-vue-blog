@@ -3,7 +3,7 @@
     <BlogHeader/>
     
     <ArticleList/>
-    
+
     <BlogFooter/>
 
 </template>
@@ -21,7 +21,4 @@
 
 <style>
 
-    {
-    background-color:  ;
-    }
 </style>

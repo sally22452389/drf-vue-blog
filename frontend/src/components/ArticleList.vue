@@ -2,9 +2,7 @@
 
     <div v-for="article in info.results" v-bind:key="article.url" id="articles">
         <div class="grid" :style="gridStyle(article)">
-            <div
-                    class="image-container"
-            >
+            <div class="image-container">
                 <img :src="imageIfExists(article)" alt="" class="image">
             </div>
 
@@ -27,6 +25,7 @@
                     </router-link>
                 </div>
                 <div>{{ formatted_time(article.created) }}</div>
+                <hr>
             </div>
         </div>
     </div>
@@ -101,7 +100,9 @@
     border-radius: 15px;
     }
     #articles {
-        padding: 10px;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 5px 10px ;
         background-color: ;
     }
 

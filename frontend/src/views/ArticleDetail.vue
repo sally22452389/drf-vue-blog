@@ -13,7 +13,15 @@
                 </router-link>
                 </span>
             </p>
-            <div v-html="article.body_html" class="article-body"></div>
+            
+            <div class="content">
+            <vue-markdown v-html="article.body_html" class="article-body"></vue-markdown>
+            </div>
+
+            <div class="content">
+            <Comments :article="article" />
+            </div>
+
         </div>
         <div>
             <h3>目錄</h3>
@@ -21,7 +29,6 @@
         </div>
     </div>
 
-    <Comments :article="article" />
     <BlogFooter/>
 
 </template>
@@ -54,9 +61,11 @@
         computed: {
             isSuperuser() {
                 return localStorage.getItem('isSuperuser.myblog') === 'true'
-            }
+            },
+
         }
     }
+
 </script>
 
 <style scoped>
@@ -83,7 +92,7 @@
     .article-body p img {
         max-width: 100%;
         border-radius: 50px;
-        box-shadow: gray 0 0 20px;
+        box-shadow: gray 0 0 10px;
     }
 
     .toc ul {
@@ -92,5 +101,11 @@
 
     .toc a {
         color: gray;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem 1rem ;
     }
 </style>
