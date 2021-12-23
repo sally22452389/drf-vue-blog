@@ -70,6 +70,7 @@
 
 <style scoped>
     .grid-container {
+        padding-top: 0px;
         display: grid;
         grid-template-columns: 3fr 1fr;
     }
@@ -89,6 +90,7 @@
 </style>
 
 <style>
+
     .article-body p img {
         max-width: 100%;
         border-radius: 50px;
@@ -105,8 +107,8 @@
 
     .content {
         max-width: 700px;
-        margin: auto;
-        padding: 1rem 1rem ;
+        margin: 0 auto;
+
     }
     p code {
         background: #272822; 
@@ -195,5 +197,7 @@
     .codehilite .vi { color: #f8f8f2 } /* Name.Variable.Instance */
     .codehilite .vm { color: #f8f8f2 } /* Name.Variable.Magic */
     .codehilite .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+
 
 </style>

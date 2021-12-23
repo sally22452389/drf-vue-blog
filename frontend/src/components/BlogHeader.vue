@@ -1,25 +1,28 @@
 <template>
     <div id="header">
         <div class="grid">
-            <div></div>
-            <h1><router-link to="/">icemaple Drf-Vue Blog</router-link></h1>
-            <SearchButton/>
-        </div>
-        <hr>
-        <div class="login">
-            <div v-if="hasLogin">
-                <div class="dropdown">
-                    <button class="dropbtn">歡迎, {{username}} </button>
-                    <div class="dropdown-content">
-                        <router-link :to="{ name: 'UserCenter', params: { username: username }}">用戶中心</router-link>
-                        <router-link :to="{ name: 'ArticleCreate' }" v-if="isSuperuser">發表文章</router-link>
-                        <router-link to="/" v-on:click.prevent="logout()">登出</router-link>
+            <a href="/">Icemaple drf-vue blog</a>
+            <p></p>
+            <div class="searchbutton">
+                <SearchButton/>
+            </div>
+            <div class="login">
+
+                <div v-if="hasLogin">
+                    <div class="dropdown">
+                        <button class="dropbtn">歡迎, {{username}} </button>
+                        <div class="dropdown-content">
+                            <router-link :to="{ name: 'UserCenter', params: { username: username }}">用戶中心</router-link>
+                            <router-link :to="{ name: 'ArticleCreate' }" v-if="isSuperuser">發表文章</router-link>
+                            <router-link to="/" v-on:click.prevent="logout()">登出</router-link>
+                        </div>
                     </div>
                 </div>
+                <div v-else>
+                    <router-link to="/login" class="login-link">登錄</router-link>
+                </div>
             </div>
-            <div v-else>
-            <router-link to="/login" class="login-link">登錄</router-link>
-            </div>
+            
         </div>
     </div>
 </template>
@@ -75,7 +78,7 @@
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 120px;
+        min-width: 50px;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         text-align: center;
     }
@@ -103,23 +106,50 @@
 <style scoped>
     
     #header {
-        text-align: center;
-        margin-top: 20px;
+        padding-top: 0px;
+        padding-bottom: 80px;
+        text-align: center; 
+        margin: 0 auto;
         font-weight: bold;
-        background:  ;
+        background-color: ;
+        
     }
 
     .grid {
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        height: ;
         display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr 0.2fr;
+        background-color: #375a7f;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+        line-height: inherit;
+        white-space: nowrap;
+
+        font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+        color: #273849;
     }
 
+    .searchbutton {
+
+    }
     .login-link {
-        color: black;
+        color: #ffffff;
+        font-size: 70%;
     }
 
     .login {
         text-align: right;
-        padding-right: 5px;
+        padding-right: 70px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
     }
 </style>

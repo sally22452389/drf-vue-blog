@@ -1,5 +1,7 @@
 <template>
 
+    <BlogHeader/>
+
     <div v-for="article in info.results" v-bind:key="article.url" id="articles">
         <div class="grid" :style="gridStyle(article)">
             <div class="image-container">

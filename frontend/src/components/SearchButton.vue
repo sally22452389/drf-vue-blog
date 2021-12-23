@@ -28,7 +28,10 @@
 
 <style scoped>
 .search {
-        padding-top: 22px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+
     }
 
     /* css https://blog.csdn.net/qq_39198420/article/details/77973339*/

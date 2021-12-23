@@ -9,9 +9,12 @@
 </script>
 
 <style>
+    body {
+        margin: 0px ;
+    }
     #app {
         font-family: Georgia, Arial, sans-serif;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 </style>
