@@ -90,7 +90,21 @@
 </style>
 
 <style>
+    @media only screen and (min-width: 300px) and (max-width: 768px) {
+    .content {
+        max-width: 380px;
+        margin: 5px;
 
+    }
+    }
+
+    @media only screen and (min-width: 769px) {
+    .content {
+        max-width: 700px;
+        margin: 0 auto;
+
+    }
+    }
     .article-body p img {
         max-width: 100%;
         border-radius: 50px;
@@ -103,12 +117,6 @@
 
     .toc a {
         color: gray;
-    }
-
-    .content {
-        max-width: 700px;
-        margin: 0 auto;
-
     }
     p code {
         background: #272822; 

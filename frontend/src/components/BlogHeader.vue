@@ -104,7 +104,6 @@
 </style>
 
 <style scoped>
-    
     #header {
         padding-top: 0px;
         padding-bottom: 80px;
@@ -114,7 +113,7 @@
         background-color: ;
         
     }
-
+    
     .grid {
         position: fixed;
         width: 100%;
@@ -138,6 +137,7 @@
     .searchbutton {
 
     }
+    
     .login-link {
         color: #ffffff;
         font-size: 70%;
@@ -152,4 +152,5 @@
         text-decoration: none;
         color: #fff;
     }
+    
 </style>

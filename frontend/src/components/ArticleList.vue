@@ -111,7 +111,7 @@
     .article-title {
         font-size: large;
         font-weight: bolder;
-        color: black;
+        color: ;
         text-decoration: ;
         padding: 5px 0 5px 0;
     }
@@ -133,7 +133,7 @@
     }
 
     a {
-        color: black;
+        color: #f8f8f2;
     }
 
     .current-page {

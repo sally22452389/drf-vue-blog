@@ -17,9 +17,10 @@
         position: fixed;
         left: 0;
         bottom: 0;
-        height: 60px;
+        height: 50px;
         width: 100%;
         background: lightskyblue;
+        color:#000;
         text-align: center;
         font-weight: bold;
     }

@@ -31,7 +31,7 @@
         padding-top: 0px;
         padding-right: 0px;
         padding-left: 0px;
-
+        
     }
 
     /* css https://blog.csdn.net/qq_39198420/article/details/77973339*/
@@ -54,12 +54,12 @@
         width: 100%;
         height: 35px;
         padding-left: 13px;
-        padding-right: 46px;
+        padding-right: 20px;
     }
 
     button {
         height: 35px;
-        width: 35px;
+        width: 30px;
         cursor: pointer;
         position: absolute;
     }

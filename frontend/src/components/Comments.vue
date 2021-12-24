@@ -1,5 +1,6 @@
 <template>
-  <br><br>
+  <br>
+  <br>
   <hr>
   <h3>發表評論</h3>
   <!-- 評論多行文本輸入 -->
@@ -10,7 +11,7 @@
             id="comment-area"
             cols="60"
             rows="5"
-            ></textarea>
+  ></textarea>
   <div>
     <button @click="submit" class="submitBtn">留言</button>
   </div>
